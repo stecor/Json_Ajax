@@ -7,7 +7,7 @@ btn.addEventListener("click", function() {
 
   var ourRequest = new XMLHttpRequest();
 
-  ourRequest.open('GET', '../json/animals-' + pageCounter + '.json');
+  ourRequest.open('GET', '~/json/animals-' + pageCounter + '.json');
 
   ourRequest.onload = function() {
     if(ourRequest.status >= 200 && ourRequest.status < 400){
